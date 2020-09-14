@@ -1,0 +1,148 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+// Colors variables
+$primary-aqua: hsl(179, 62%, 43%);
+$neutral-aqua: hsl(179, 47%, 52%);
+$primary-green: hsl(71, 73%, 54%);
+$neutral: hsl(204, 43%, 93%);
+$primary-gray: hsl(218, 22%, 67%);
+$neutral-shadow: hsla(0, 0%, 47%, 0.658);
+$neutral-gray: hsla(0, 0%, 93%, 0.904);
+$white: hsl(255, 100%, 100%);
+$blue: hsl(228, 45%, 44%);
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  color: $white;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: $neutral;
+}
+
+button {
+  background-color: $primary-green;
+  width: 100%;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.4em 0.6em 0 $neutral-shadow;
+  margin-top: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8em 0 0.5em 0;
+  font-size: 11px;
+}
+
+footer p {
+  color: $neutral-shadow;
+}
+
+footer a {
+  color: $blue;
+}
+
+/* Grid template area */
+.container {
+  display: grid;
+  margin: 8% 30% 5% 30%;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "item1 item1"
+    "item2 item3";
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.4em 0.6em 0 $neutral-shadow;
+}
+
+.item1 {
+  background-color: $white;
+  grid-area: item1;
+}
+
+.item2 {
+  background-color: $primary-aqua;
+  grid-area: item2;
+  padding: 2em;
+}
+
+.item3 {
+  background-color: $neutral-aqua;
+  grid-area: item3;
+}
+
+.item1,
+.item3 {
+  padding: 2em 3.1em 2em 2em;
+}
+
+/* Text Styles */
+.item1 h2 {
+  color: $primary-aqua;
+  padding-bottom: 0.5em;
+}
+
+.item1 h3 {
+  color: $primary-green;
+}
+
+.item1 h3,
+.item2 h3,
+.item3 h3 {
+  padding-bottom: 0.5em;
+}
+
+.item1 p {
+  color: $primary-gray;
+}
+
+.item3 p,
+.item2 sup {
+  color: $neutral-gray;
+}
+
+.item2 p,
+.item3 p {
+  padding: 0.2em 0;
+}
+
+.item2 span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.item2 sup {
+  font-weight: 400;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Mobile design */
+@media only screen and (max-width: 400px) {
+  .container {
+    display: grid;
+    margin: 10% 5%;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+  .item1,
+  .item2,
+  .item3 {
+  padding: 2em;
+  }
+}

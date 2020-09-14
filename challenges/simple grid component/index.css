@@ -1,0 +1,135 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: #e5eff5;
+}
+
+button {
+  background-color: #c0df34;
+  width: 100%;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.4em 0.6em 0 rgba(120, 120, 120, 0.658);
+  margin-top: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 0.8em 0 0.5em 0;
+  font-size: 11px;
+}
+
+footer p {
+  color: rgba(120, 120, 120, 0.658);
+}
+
+footer a {
+  color: #3e52a3;
+}
+
+/* Grid template area */
+.container {
+  display: grid;
+  margin: 8% 30% 5% 30%;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas: "item1 item1" "item2 item3";
+  border-radius: 0.5em;
+  box-shadow: 0.2em 0.4em 0.6em 0 rgba(120, 120, 120, 0.658);
+}
+
+.item1 {
+  background-color: white;
+  grid-area: item1;
+}
+
+.item2 {
+  background-color: #2ab2af;
+  grid-area: item2;
+  padding: 2em;
+}
+
+.item3 {
+  background-color: #4bbebc;
+  grid-area: item3;
+}
+
+.item1,
+.item3 {
+  padding: 2em 3.1em 2em 2em;
+}
+
+/* Text Styles */
+.item1 h2 {
+  color: #2ab2af;
+  padding-bottom: 0.5em;
+}
+
+.item1 h3 {
+  color: #c0df34;
+}
+
+.item1 h3,
+.item2 h3,
+.item3 h3 {
+  padding-bottom: 0.5em;
+}
+
+.item1 p {
+  color: #98a6bd;
+}
+
+.item3 p,
+.item2 sup {
+  color: rgba(237, 237, 237, 0.904);
+}
+
+.item2 p,
+.item3 p {
+  padding: 0.2em 0;
+}
+
+.item2 span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.item2 sup {
+  font-weight: 400;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/* Mobile design */
+@media only screen and (max-width: 400px) {
+  .container {
+    display: grid;
+    margin: 10% 5%;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "item1" "item2" "item3";
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    padding: 2em;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

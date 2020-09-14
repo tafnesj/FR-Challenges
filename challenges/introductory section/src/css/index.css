@@ -1,0 +1,155 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  background-color: #674baf;
+  background-image: url(../img/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: 90% 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  padding: 3em 0 0 4em;
+}
+
+button {
+  background-color: white;
+  color: #674baf;
+  width: 30%;
+  padding: 0.8em 1em;
+  border: 0;
+  border-radius: 2.5em;
+  box-shadow: 0.1em 0.2em 0.3em 0 #4e4e4e;
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0 1em 0;
+  font-size: 11px;
+  bottom: 0;
+  width: 100%;
+  background-color: purple;
+}
+
+/*Grid template areas */
+.container {
+  padding: 0 4em;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: auto;
+  grid-template-areas: "item1 item2" ". item3";
+}
+
+.item1 {
+  grid-area: item1;
+  padding: 4em 0 0 0;
+}
+
+.item2 {
+  grid-area: item2;
+  padding: 6em 1em 0 0;
+}
+
+.item3 {
+  grid-area: item3;
+  text-align: right;
+  padding: 2em 0 1.5em 0;
+}
+
+/* Text Styles */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.item2 p {
+  font-size: 1.2em;
+  color: #e4e2e2;
+}
+
+.item3 i {
+  font-size: 1em;
+  padding: 0.5em;
+  border: solid white 1px;
+  border-radius: 4em;
+  margin-right: 0.5em;
+}
+
+/* Images Style */
+header img {
+  width: 15%;
+}
+
+.item1 img {
+  max-width: 95%;
+  height: auto;
+}
+
+/* Mobile design */
+@media only screen and (max-width: 390px) {
+  /* Global */
+  body {
+    background-color: #674baf;
+    background-image: url(../img/bg-mobile.svg);
+    background-size: contain;
+  }
+
+  header {
+    padding: 2em 2em 1em 2em;
+  }
+
+  button {
+    width: 80%;
+    padding: 0.5em 1em;
+  }
+
+  /* Grid template areas */
+  .container {
+    padding: 2em;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "item1" "item2" "item3";
+  }
+
+  .item1,
+.item2,
+.item3 {
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  .item3 {
+    margin-top: 2em;
+  }
+
+  /* Text Style */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* Images Style */
+  header img {
+    width: 50%;
+  }
+
+  .item1 img {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
