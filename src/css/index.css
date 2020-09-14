@@ -1,0 +1,359 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap");
+
+/* Global */
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  color: #777;
+  font-weight: 400;
+  width: 100%;
+  height: 100%;
+}
+
+hr {
+  position: relative;
+  height: 0.4em;
+  width: 6em;
+  background-color: #acdbdf;
+  margin: 0 auto 1.5em auto;
+  border: 0;
+}
+
+li a {
+  color: #fff;
+  font-weight: 400;
+}
+
+li a:hover,
+li a:focus {
+  text-decoration: none;
+  color: #acdbdf;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+h2 {
+  margin: 0 0 0.5em 0;
+  font-weight: 500;
+  font-size: 2.5em;
+  color: #333;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #333;
+}
+
+.section-title {
+  margin-bottom: 2em;
+}
+
+/* Navbar */
+nav span,
+header span {
+  color: #acdbdf;
+  font-weight: 500;
+}
+
+#menu {
+  padding: 20px;
+  transition: all 0.8s;
+}
+#menu.navbar-default {
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
+}
+#menu a.navbar-brand {
+  font-size: 22px;
+  color: #eee;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#menu.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 0;
+  border: 2px solid transparent;
+  letter-spacing: 0.5px;
+  margin: 10px 15px 0 15px;
+}
+#menu.navbar-default .navbar-nav > li > a:hover {
+  color: #acdbdf;
+  font-weight: bold;
+}
+.on {
+  background-color: #0b233d !important;
+  padding: 0 !important;
+  padding: 10px 0 !important;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #eee !important;
+  background-color: transparent;
+}
+.navbar-toggle {
+  border-radius: 0.5em;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+  border-color: #fff;
+  border-radius: 0.5em;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* Hero Section */
+strong {
+  text-transform: uppercase;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  padding: 0;
+  background: url(../img/intro-bg.jpg) center bottom;
+  background-color: #e5e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+}
+
+.intro .overlay {
+  background: rgba(4, 4, 54, 0.507);
+}
+
+.intro h1 {
+  font-size: 4.9em;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  letter-spacing: -1px;
+}
+
+.intro p {
+  font-size: 24px;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
+}
+
+header .intro-text {
+  padding-top: 300px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.btn-custom {
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #05a7b6;
+  padding: 0.8em 1.5em;
+  margin: 0;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  margin-top: 1.5em;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom.active {
+  color: #fff;
+  background-color: #09b9c9;
+}
+
+/* About Section */
+#about {
+  padding: 120px 0;
+  background: #f6f6f6;
+}
+#about h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#about .about-text {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+#about img {
+  display: inline-block;
+  border-radius: 1.5em;
+}
+
+#about ul {
+  list-style-type: square;
+}
+
+#about p {
+  line-height: 24px;
+  margin: 15px 0 30px;
+}
+
+/* Level Section */
+h3 {
+  display: inline;
+}
+
+.badge {
+  background-color: #0b233d;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  margin-top: -0.5em;
+}
+
+#levels {
+  padding: 13em 0;
+}
+#levels .service {
+  padding-left: 40px;
+}
+
+#levels h3 {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+/* Solutions Section */
+#solution {
+  padding: 8em 0 6em 0;
+  background-color: #f3f3f3;
+}
+
+.filterDiv {
+  float: left;
+  color: #ffffff;
+  padding: 0.5em 0;
+  text-align: center;
+  display: none;
+  margin-bottom: 3em;
+}
+
+.filterDiv img {
+  width: 90%;
+  border-radius: 1em;
+}
+
+.show {
+  display: block;
+}
+
+.container-sol {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#levelContainer {
+  margin-top: 2em;
+}
+
+.btn-level {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  color: #0b233d;
+  border: 1px solid #0b233d;
+  border-radius: 1em;
+}
+
+.btn-level:hover {
+  background-color: #0b233d;
+  color: #fff;
+}
+
+.btn-level.active {
+  background-color: #0b333d;
+  color: white;
+  outline: none;
+}
+
+/* Footer Section*/
+#footer {
+  background: #0b233d;
+  padding: 2em 0 0 0;
+  color: #fff;
+}
+
+#footer .social {
+  margin-bottom: 1em;
+}
+#footer .social ul li {
+  display: inline-block;
+  margin: 0 1.2em;
+}
+
+#footer .social i.fa {
+  font-size: 1.5em;
+  padding: 4px;
+  transition: all 0.3s;
+}
+
+#footer .social i.fa:hover {
+  color: #acdbdf;
+}
+
+#footer img {
+  height: 1.5em;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+  #menu a.navbar-brand {
+    font-size: 0.8em;
+  }
+
+  #about,
+  #solution,
+  #levels {
+    padding: 2em 0;
+  }
+
+  #footer {
+    background: #0b233d;
+    padding: 0.5em 0 0 0;
+  }
+
+  #footer img {
+    height: 1em;
+  }
+
+  #footer p,
+  #footer .social i.fa {
+    font-size: 1em;
+  }
+
+  .intro-text h1 {
+    font-size: 2em;
+  }
+
+  .intro-text p {
+    font-size: 1em;
+  }
+
+  .btn-custom {
+    padding: 0.6em 1.5em;
+    font-size: 1em;
+  }
+}
