@@ -17,6 +17,7 @@ $grayish-blue: hsl(208, 11%, 55%);
 body {
   font-size: 18px;
   color: $dark-cyan;
+  max-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 

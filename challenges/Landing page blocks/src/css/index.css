@@ -10,6 +10,7 @@
 body {
   font-size: 18px;
   color: #00252e;
+  max-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -347,7 +348,7 @@ body {
   }
 
   .item__A,
-  .item__B {
+.item__B {
     padding: 2em;
     align-items: center;
     align-self: center;
@@ -484,7 +485,7 @@ body {
   }
 
   .item__A,
-  .item__B {
+.item__B {
     padding: 1em;
     align-items: center;
     align-self: center;
