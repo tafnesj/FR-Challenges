@@ -1,0 +1,142 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+// Colors variables
+$pink: hsl(322, 100%, 66%);
+$pale-cyan: hsl(193, 100%, 96%);
+$dark-cyan: hsl(192, 100%, 9%);
+$grayish-blue: hsl(208, 11%, 55%);
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 18px;
+  overflow: hidden;
+}
+
+/* Hero Section */
+.hero {
+  text-align: left;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $pale-cyan;
+  background-image: url(../img/bg-hero-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero__header {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.hero__header .hero__item {
+  padding: 3em 4em 0 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__logo,
+.hero__button--header {
+  display: inline;
+}
+
+.hero__header .hero__logo {
+  height: 2em;
+}
+
+.hero__button--header {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  border: none;
+  color: $dark-cyan;
+  right: 0;
+  padding: 1em 4em;
+  text-align: center;
+  border-radius: 2em;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  outline: none;
+}
+
+.hero__body {
+  padding: 2em 0;
+}
+
+.hero__body .hero__list {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: relative;
+  top: 2.5em;
+  padding: 0 4em;
+  font-family: "Open Sans", sans-serif;;
+}
+
+.hero__title {
+  font-size: 2.5em;
+  color: $dark-cyan;
+  margin-top: 2.5em;
+}
+
+.hero__subtitle {
+  margin: 1.5em 0;
+}
+
+.hero__body .hero__img {
+  padding-top: 1.5em;
+  width: 85%;
+  float: right;
+}
+
+.hero__button--body {
+  background-color: $pink;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 0.8em;
+  border: none;
+  padding: 1.2em 4.3em;
+  text-align: center;
+  border-radius: 2em;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.7);
+  outline: none;
+}
+
+/* Block Section */
+.blocks {
+  padding: 3em 4em 6em 4em;
+  width: 100%;
+  background-color: blu;
+}

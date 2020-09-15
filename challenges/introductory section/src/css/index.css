@@ -31,6 +31,7 @@ button {
   box-shadow: 0.1em 0.2em 0.3em 0 #4e4e4e;
   margin-top: 1.5em;
   font-size: 1.2em;
+  cursor: pointer;
 }
 
 footer {
@@ -127,8 +128,8 @@ header img {
   }
 
   .item1,
-.item2,
-.item3 {
+  .item2,
+  .item3 {
     text-align: center;
     padding-top: 2em;
   }
