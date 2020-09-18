@@ -86,11 +86,11 @@ p {
 
 .triangle {
   position: absolute;
-  top: 19.5em;
-  right: 28em;
+  top: 38%;
+  right: 25%;
   background: white;
   height: 4.5em;
-  width: 12em;
+  width: 12.2em;
   border-radius: 0.5em 0.5em 0 0.5em;
   display: flex;
   align-items: center;
@@ -111,7 +111,7 @@ p {
   border-style: solid;
   border-width: 2em 0 0 2em;
   border-color: white transparent transparent transparent;
-  left: 10.5em;
+  left: 88%;
   transform: translateX(-25%) translateY(60%);
 }
 
@@ -144,7 +144,7 @@ p {
 .dot {
   height: 0.6em;
   width: 0.6em;
-  margin: 0.01em 0 0 26.3em;
+  margin: 0.01em 0 0 102%;
   background-color: #fff;
   border-radius: 50%;
   margin-bottom: 1em;
@@ -228,7 +228,7 @@ p {
   .dot {
     height: 0.6em;
     width: 0.6em;
-    margin: 0.01em 0 0 15.8em;
+    margin: 0.01em 0 0 103%;
     background-color: #fff;
     border-radius: 50%;
     margin-bottom: 1em;
