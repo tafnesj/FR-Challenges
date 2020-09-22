@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /* Neutral */
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* Global */
+* {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px !important;
+}
+
+body {
+  padding: 5em 0 0 0 !important;
+}
+
+h1 {
+  color: var(--very-dark-magenta);
+  font-size: 45px !important;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+}
+
+h3 {
+  color: var(--soft-pink);
+}
+
+h4 {
+  margin-left: 1em !important;
+  display: inline !important;
+  font-weight: 700 !important;
+}
+
+/* Container */
+.header {
+  margin-top: 2.5em !important;
+}
+
+.header p {
+  color: var(--dark-grayish-magenta);
+}
+
+.badge {
+  background-color: var(--light-grayish-magenta);
+  color: var(--very-dark-magenta);
+  padding: 1.1em 2em !important;
+  margin-bottom: 1em;
+  border-radius: 0.5em !important;
+}
+
+.stars img {
+  width: 1em;
+}
+
+.stars-01 {
+  margin-left: 1em !important;
+}
+
+.stars-02 {
+  margin-left: 4em !important;
+}
+
+.stars-03 {
+  margin-left: 7em !important;
+}
+
+.stars-03 .badge {
+  padding-right: 4em !important;
+}
+
+.description {
+  color: var(--white);
+  background-color: var(--very-dark-magenta);
+  margin-right: 1.5em;
+  border-radius: 0.5em;
+  padding: 2em 2em 0.5em 2em !important;
+}
+
+.description p {
+  color: var(--white);
+  padding: 1em;
+  font-size: 13px !important;
+}
+
+.description-02 {
+  margin-top: 1em !important;
+}
+
+.description-03 {
+  margin-top: 2em !important;
+}
+
+.profile-icon {
+  border-radius: 3em;
+  width: 80%;
+}
+
+.container-description {
+  margin-top: 3em;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  position: absolute;
+  margin: 3em 0 0 0 !important;
+  padding: 0.4em 0 0 0 !important;
+  font-size: 0.7em !important;
+  bottom: 0 !important;
+  color: var(--white);
+  background-color: var(--very-dark-magenta);
+}
+
+.attribution a {
+  color: var(--soft-pink);
+}
+
+.attribution a:hover {
+  color: var(--white);
+}
+
+/* Mobile design */
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 1em !important;
+  }
+
+  .header {
+    text-align: center !important;
+  }
+
+  .badge {
+    margin-left: -1em !important;
+  }
+
+  .stars-01,
+  .stars-02,
+  .stars-03 {
+    margin-left: 0 !important;
+  }
+
+  .stars-01 .badge,
+  .stars-03 .badge {
+    padding-right: 2em !important;
+  }
+
+  .stars-02 .badge {
+    padding-right: 1.5em !important;
+  }
+
+  .stars-02 h4 {
+    margin-left: -0.5em !important;
+  }
+
+  h4 {
+    display: block !important;
+    margin-top: 1em !important;
+  }
+
+  h1 {
+    font-size: 35px !important;
+  }
+
+  .description {
+    font-size: 15px !important;
+    text-align: left !important;
+  }
+
+  .description-01,
+  .description-02,
+  .description-03 {
+    margin: 1em !important;
+  }
+}
