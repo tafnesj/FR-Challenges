@@ -1,0 +1,154 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.container_header {
+  padding-top: 4em;
+  width: 27em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1.title {
+  color: var(--very-dark-blue);
+  font-weight: 200;
+  font-size: 1.8em;
+}
+
+h2.title {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+p.subtitle {
+  font-size: 0.75em;
+  margin-top: 0.7em;
+  color: var(--grayish-blue);
+  font-weight: 400;
+}
+
+/* Cards */
+.container_cards {
+  display: grid;
+  grid-template-areas:
+    "card-01 card-02 card-04"
+    "card-01 card-03 card-04"
+    "card-01 . card-04";
+  justify-items: center;
+  margin: 3em auto 0;
+  width: 70%;
+}
+
+.cards {
+  padding: 1.5em 1em 1.5em;
+  height: 9.5em;
+  width: 15em;
+  border-radius: 0.3em;
+  margin-bottom: 1em;
+  font-weight: 200;
+  -webkit-box-shadow: 3px 8px 18px -4px rgba(117, 117, 117, 0.59);
+  -moz-box-shadow: 3px 8px 18px -4px rgba(117, 117, 117, 0.59);
+  box-shadow: 3px 8px 18px -4px rgba(117, 117, 117, 0.59);
+}
+
+.card-01 {
+  border-top: 4px var(--cyan) solid;
+  grid-area: card-01;
+  align-self: center;
+  justify-self: end;
+}
+
+.card-02 {
+  border-top: 4px var(--red) solid;
+  grid-area: card-02;
+}
+
+.card-03 {
+  border-top: 4px var(--orange) solid;
+  grid-area: card-03;
+}
+
+.card-04 {
+  border-top: 4px var(--blue) solid;
+  grid-area: card-04;
+  align-self: center;
+  justify-self: start;
+}
+
+h3.title {
+  font-size: 1em;
+  color: var(--very-dark-blue);
+  font-weight: 600;
+}
+
+.cards p {
+  font-size: 0.65em;
+  padding: 0.5em;
+}
+
+img {
+  margin-top: 2.5em;
+  width: 3.5em;
+  float: right;
+}
+
+/* Mobile designs */
+@media only screen and (max-width: 768px) {
+  .container_header {
+    padding-top: 4.5em;
+    width: 20em;
+  }
+
+  h1.title,
+  h2.title {
+    font-size: 1.5em;
+  }
+
+  p.subtitle {
+    font-size: 0.85em;
+  }
+
+  .container_cards {
+    display: grid;
+    grid-template-areas:
+      "card-01"
+      "card-02"
+      "card-03"
+      "card-04";
+    padding-bottom: 3em;
+  }
+
+  .cards {
+    margin-bottom: 2em;
+  }
+
+  .card-01 {
+    justify-self: center;
+  }
+
+  .card-04 {
+    justify-self: center;
+  }
+}
